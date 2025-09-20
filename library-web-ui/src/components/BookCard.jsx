@@ -6,7 +6,7 @@ function BookCard({ book }) {
     <Card className="m-2" style={{ width: '18rem' }}>
       <Card.Img
         variant="top"
-        src={`http://192.168.1.5/api/Books/GetImage/${book.imageName}`} // Or use book.imageName if it's a full URL
+        src={`http://192.168.1.5:5000/api/Books/GetImage/${book.imageName}`} // Or use book.imageName if it's a full URL
         alt={book.title}
         style={{ height: '250px', objectFit: 'cover' }}
       />
